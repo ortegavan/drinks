@@ -1,1 +1,14 @@
 <app-header />
+
+<main class="container mt-32 flex g-32 cards">
+    @for (drink of drinks$ | async; track $index) {
+        <app-card [drink]="drink" />
+    }
+</main>
+
+<footer class="p-32 flex justify-center">
+    <small>
+        Não compartilhe bebidas alcoólicas com menores de idade. Se beber, não
+        dirija.
+    </small>
+</footer>

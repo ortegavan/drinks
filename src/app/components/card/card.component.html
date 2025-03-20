@@ -1,0 +1,7 @@
+@if (drink(); as drink) {
+    <div class="bg-white p-16 card">
+        <img [src]="drink.image" [alt]="drink.name" />
+        <h3>{{ drink.name }}</h3>
+        <p>{{ drink.description }}</p>
+    </div>
+}

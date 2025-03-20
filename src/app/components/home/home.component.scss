@@ -1,0 +1,15 @@
+.cards {
+    flex-wrap: wrap;
+
+    app-card {
+        width: 31%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        app-card {
+            width: 100%;
+        }
+    }
+}

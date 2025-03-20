@@ -6,6 +6,7 @@ body {
 
 body {
     font-family: "Poiret One", sans-serif;
+    font-size: 18px;
     color: #666;
     background-color: #f0f4f9;
 }
@@ -15,6 +16,12 @@ body {
     font-size: 32px;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -22,6 +29,10 @@ a {
 
 i {
     font-size: 24px;
+}
+
+.bg-white {
+    background-color: #fff;
 }
 
 .flex {
@@ -48,10 +59,38 @@ i {
     gap: 16px;
 }
 
+.g-32 {
+    gap: 32px;
+}
+
 .w-full {
     width: 100%;
 }
 
+.p-16 {
+    padding: 16px;
+}
+
 .p-32 {
     padding: 32px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    i {
+        font-size: 20px;
+    }
+
+    .flex {
+        div {
+            flex: unset;
+        }
+    }
 }
