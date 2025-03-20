@@ -43,6 +43,14 @@ i {
     }
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
 .justify-center {
     justify-content: center;
 }
@@ -79,6 +87,10 @@ i {
     margin-top: 32px;
 }
 
+.mt-64 {
+    margin-top: 64px;
+}
+
 @media screen and (max-width: 768px) {
     .logo {
         font-size: 24px;
@@ -92,5 +104,9 @@ i {
         div {
             flex: unset;
         }
+    }
+
+    .g-32 {
+        gap: 16px;
     }
 }

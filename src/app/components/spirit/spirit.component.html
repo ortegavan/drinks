@@ -1,0 +1,10 @@
+@if (spirit(); as spirit) {
+    <div
+        class="flex flex-col justify-center align-center"
+        (click)="click()"
+        [class.selected]="spirit.selected"
+    >
+        <img [src]="spirit.image" [alt]="spirit.name" />
+        <h3>{{ spirit.name }}</h3>
+    </div>
+}

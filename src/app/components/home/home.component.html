@@ -1,6 +1,12 @@
 <app-header />
 
-<main class="container mt-32 flex g-32 cards">
+<section class="container mt-32 flex g-32 space-around spirits">
+    @for (spirit of spirits$ | async; track spirit.id) {
+        <app-spirit [spirit]="spirit" (spiritClicked)="changeSpirit($event)" />
+    }
+</section>
+
+<main class="container mt-64 flex g-32 cards">
     @for (drink of drinks$ | async; track $index) {
         <app-card [drink]="drink" />
     }

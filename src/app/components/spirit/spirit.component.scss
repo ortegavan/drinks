@@ -1,0 +1,28 @@
+div {
+    padding: 16px 16px 0 16px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #eaeaea;
+    }
+
+    img {
+        width: 72px;
+    }
+}
+
+.selected {
+    background-color: #eaeaea;
+}
+
+@media screen and (max-width: 768px) {
+    div {
+        img {
+            width: 32px;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+    }
+}
