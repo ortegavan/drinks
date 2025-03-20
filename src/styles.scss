@@ -6,7 +6,52 @@ body {
 
 body {
     font-family: "Poiret One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
+    color: #666;
+    background-color: #f0f4f9;
+}
+
+.logo {
+    font-family: "Great Vibes", cursive;
+    font-size: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+i {
+    font-size: 24px;
+}
+
+.flex {
+    display: flex;
+
+    div {
+        flex: 1;
+    }
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.g-16 {
+    gap: 16px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.p-32 {
+    padding: 32px;
 }
