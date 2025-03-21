@@ -1,0 +1,12 @@
+.social {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .social {
+        margin-top: 5px;
+    }
+}
