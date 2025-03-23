@@ -293,34 +293,34 @@ export class DrinkService {
                 image: 'ricota.jpg',
             },
         },
-        {
-            id: 10,
-            name: 'Manhattan',
-            description: 'Whisky, vermute tinto e angostura',
-            image: 'manhattan.jpg',
-            spirit: 5,
-            method: 'stirred',
-            ingredients: [
-                {
-                    name: 'Whisky',
-                    quantity: 50,
-                },
-                {
-                    name: 'Vermute tinto',
-                    quantity: 20,
-                },
-                {
-                    name: 'Angostura',
-                    quantity: 2,
-                },
-            ],
-            garnish: 'Cereja',
-            glass: 'Martini',
-            pairing: {
-                description: 'Nutella com flor de sal',
-                image: 'nutella.jpg',
-            },
-        },
+        // {
+        //     id: 10,
+        //     name: 'Manhattan',
+        //     description: 'Whisky, vermute tinto e angostura',
+        //     image: 'manhattan.jpg',
+        //     spirit: 5,
+        //     method: 'stirred',
+        //     ingredients: [
+        //         {
+        //             name: 'Whisky',
+        //             quantity: 50,
+        //         },
+        //         {
+        //             name: 'Vermute tinto',
+        //             quantity: 20,
+        //         },
+        //         {
+        //             name: 'Angostura',
+        //             quantity: 2,
+        //         },
+        //     ],
+        //     garnish: 'Cereja',
+        //     glass: 'Martini',
+        //     pairing: {
+        //         description: 'Nutella com flor de sal',
+        //         image: 'nutella.jpg',
+        //     },
+        // },
         {
             id: 11,
             name: 'Martinez',
@@ -351,6 +351,40 @@ export class DrinkService {
             pairing: {
                 description: 'Queijo brie com geleia de abacaxi',
                 image: 'brie.jpg',
+            },
+        },
+        {
+            id: 13,
+            name: 'Casino',
+            description:
+                'Gin, licor de maraschino, suco de limão e angostura de laranja',
+            image: 'casino.jpg',
+            spirit: 2,
+            method: 'shaken',
+            ingredients: [
+                {
+                    name: 'Gin',
+                    quantity: 45,
+                },
+                {
+                    name: 'Licor de maraschino',
+                    quantity: 15,
+                },
+                {
+                    name: 'Suco de limão',
+                    quantity: 10,
+                },
+                {
+                    name: 'Angostura de laranja',
+                    quantity: 1,
+                },
+            ],
+            garnish: 'Cereja',
+            glass: 'Martini',
+            pairing: {
+                description:
+                    'Creme de ricota temperado com salsinha e limão e amêndoas laminadas',
+                image: 'ricota.jpg',
             },
         },
     ] as Drink[];
