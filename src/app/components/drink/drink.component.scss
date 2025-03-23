@@ -1,5 +1,40 @@
-.image {
+.drink-image {
     width: 100%;
     height: 480px;
     object-fit: cover;
+}
+
+.pairing-image {
+    width: 100%;
+    max-width: 480px;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+.ingredients {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 8px 16px;
+    width: 100%;
+    max-width: 380px;
+
+    .header {
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 4px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .drink-image {
+        height: 320px;
+    }
+
+    .recipe {
+        flex-direction: column;
+        gap: 32px;
+    }
 }

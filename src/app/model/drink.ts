@@ -1,4 +1,5 @@
 import { Ingredient } from './ingredient';
+import { Pairing } from './pairing';
 
 export type Drink = {
     id: number;
@@ -10,4 +11,5 @@ export type Drink = {
     ingredients: Ingredient[];
     garnish: string;
     glass: string;
+    pairing: Pairing;
 };

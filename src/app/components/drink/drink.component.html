@@ -1,17 +1,37 @@
 @if (drink$ | async; as drink) {
-    <div class="flex flex-col g-32">
-        <img [src]="drink.image" [alt]="drink.name" class="image" />
-        <div class="container flex justify-center">
-            <h1>{{ drink.name }}</h1>
+    <img [src]="drink.image" [alt]="drink.name" class="drink-image" />
+
+    <div class="container mt-32 mb-32">
+        <div class="flex recipe">
+            <div>
+                <h1>{{ drink.name }}</h1>
+                <p>Método: {{ drink.method }}</p>
+
+                <div class="ingredients mt-32">
+                    <div class="header">Ml/dashes</div>
+                    <div class="header">Ingrediente</div>
+
+                    @for (item of drink.ingredients; track $index) {
+                        <div>
+                            {{ item.quantity }}
+                        </div>
+                        <div>
+                            {{ item.name }}
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <strong> Harmoniza com: </strong>
+                <span>
+                    {{ drink.pairing.description }}
+                </span>
+                <img
+                    [src]="drink.pairing.image"
+                    alt=""
+                    class="mt-16 pairing-image"
+                />
+            </div>
         </div>
-        <div class="container flex flex-col justify-center">
-            @for (item of drink.ingredients; track $index) {
-                <span>{{ item.quantity }} de {{ item.name }}</span>
-            }
-        </div>
-        <div class="container flex justify-center">
-            Método: {{ drink.method }}
-        </div>
-        <div>&nbsp;</div>
     </div>
 }
