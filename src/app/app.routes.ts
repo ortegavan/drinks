@@ -10,5 +10,14 @@ export const routes: Routes = [
     {
         path: 'home',
         component: HomeComponent,
+        children: [
+            {
+                path: ':id',
+                loadComponent: () =>
+                    import('./components/drink/drink.component').then(
+                        (m) => m.DrinkComponent,
+                    ),
+            },
+        ],
     },
 ];

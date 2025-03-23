@@ -6,16 +6,24 @@ import { AsyncPipe } from '@angular/common';
 import { SpiritService } from '../../services/spirit/spirit.service';
 import { SpiritComponent } from '../spirit/spirit.component';
 import { Spirit } from '../../model/spirit';
+import { ActivatedRoute, RouterOutlet } from '@angular/router';
 
 @Component({
     selector: 'app-home',
-    imports: [HeaderComponent, CardComponent, AsyncPipe, SpiritComponent],
+    imports: [
+        HeaderComponent,
+        CardComponent,
+        AsyncPipe,
+        SpiritComponent,
+        RouterOutlet,
+    ],
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss',
 })
 export class HomeComponent {
     spiritService = inject(SpiritService);
     drinkService = inject(DrinkService);
+    route = inject(ActivatedRoute);
 
     spirits$ = this.spiritService.getSpirits();
     drinks$ = this.drinkService.getDrinks();

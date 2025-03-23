@@ -1,0 +1,17 @@
+@if (drink$ | async; as drink) {
+    <div class="flex flex-col g-32">
+        <img [src]="drink.image" [alt]="drink.name" class="image" />
+        <div class="container flex justify-center">
+            <h1>{{ drink.name }}</h1>
+        </div>
+        <div class="container flex flex-col justify-center">
+            @for (item of drink.ingredients; track $index) {
+                <span>{{ item.quantity }} de {{ item.name }}</span>
+            }
+        </div>
+        <div class="container flex justify-center">
+            Método: {{ drink.method }}
+        </div>
+        <div>&nbsp;</div>
+    </div>
+}
