@@ -387,6 +387,34 @@ export class DrinkService {
                 image: 'ricota.jpg',
             },
         },
+        {
+            id: 14,
+            name: 'Piña Colada',
+            description: 'Rum, leite de coco e xarope de abacaxi',
+            image: 'pinacolada.jpg',
+            spirit: 3,
+            method: 'shaken',
+            ingredients: [
+                {
+                    name: 'Rum',
+                    quantity: 50,
+                },
+                {
+                    name: 'Xarope de abacaxi',
+                    quantity: 25,
+                },
+                {
+                    name: 'Leite de coco',
+                    quantity: 40,
+                },
+            ],
+            garnish: 'Pedaço de abacaxi e/ou cereja',
+            glass: 'Copo longo',
+            pairing: {
+                description: 'Queijo brie com geleia de abacaxi',
+                image: 'brie.jpg',
+            },
+        },
     ] as Drink[];
 
     getDrinks(spirits?: number[]): Observable<Drink[]> {
