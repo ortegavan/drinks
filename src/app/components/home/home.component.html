@@ -2,7 +2,7 @@
 
 @if (route.children.length <= 0) {
     <section class="container mt-32 flex g-32 space-around spirits">
-        @for (spirit of spirits$ | async; track spirit.id) {
+        @for (spirit of spirits; track spirit.id) {
             <app-spirit
                 [spirit]="spirit"
                 (spiritClicked)="changeSpirit($event)"
