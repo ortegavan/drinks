@@ -121,7 +121,7 @@ export class DrinkService {
         // {
         //     id: 4,
         //     name: 'Moscow Mule',
-        //     description: 'Vodka, ginger beer, suco de limão e angostura',
+        //     description: 'Vodka, ginger beer, suco de limão e Angostura',
         //     image: 'moscow-mule.jpg',
         //     spirit: 1,
         //     method: 'built',
@@ -177,7 +177,7 @@ export class DrinkService {
         {
             id: 6,
             name: 'Rob Roy',
-            description: 'Whisky escocês, vermute tinto e angostura',
+            description: 'Whisky escocês, vermute tinto e Angostura',
             image: 'rob-roy.jpg',
             spirit: 5,
             method: 'stirred',
@@ -259,7 +259,7 @@ export class DrinkService {
             id: 9,
             name: 'Bloody Mary',
             description:
-                'Vodka, suco de tomate, suco de limão, molho inglês, tabasco e pimenta',
+                'Vodka, suco de tomate, suco de limão, molho inglês, Tabasco e pimenta do reino',
             image: 'bloody-mary.jpg',
             spirit: 1,
             method: 'thrown',
@@ -296,7 +296,7 @@ export class DrinkService {
         // {
         //     id: 10,
         //     name: 'Manhattan',
-        //     description: 'Whisky, vermute tinto e angostura',
+        //     description: 'Bourbon, vermute tinto e Angostura',
         //     image: 'manhattan.jpg',
         //     spirit: 5,
         //     method: 'stirred',
@@ -324,7 +324,7 @@ export class DrinkService {
         {
             id: 11,
             name: 'Martinez',
-            description: 'Gin, vermute tinto, licor de maraschino e angostura',
+            description: 'Gin, vermute tinto, licor de maraschino e Angostura',
             image: 'martinez.jpg',
             spirit: 2,
             method: 'stirred',
@@ -357,7 +357,7 @@ export class DrinkService {
             id: 13,
             name: 'Casino',
             description:
-                'Gin, licor de maraschino, suco de limão e angostura de laranja',
+                'Gin, licor de maraschino, suco de limão e Angostura de laranja',
             image: 'casino.jpg',
             spirit: 2,
             method: 'shaken',
@@ -387,34 +387,34 @@ export class DrinkService {
                 image: 'ricota.jpg',
             },
         },
-        {
-            id: 14,
-            name: 'Piña Colada',
-            description: 'Rum, leite de coco e xarope de abacaxi',
-            image: 'pinacolada.jpg',
-            spirit: 3,
-            method: 'shaken',
-            ingredients: [
-                {
-                    name: 'Rum',
-                    quantity: 50,
-                },
-                {
-                    name: 'Xarope de abacaxi',
-                    quantity: 25,
-                },
-                {
-                    name: 'Leite de coco',
-                    quantity: 40,
-                },
-            ],
-            garnish: 'Pedaço de abacaxi e/ou cereja',
-            glass: 'Copo longo',
-            pairing: {
-                description: 'Queijo brie com geleia de abacaxi',
-                image: 'brie.jpg',
-            },
-        },
+        // {
+        //     id: 14,
+        //     name: 'Piña Colada',
+        //     description: 'Rum, leite de coco e xarope de abacaxi',
+        //     image: 'pinacolada.jpg',
+        //     spirit: 3,
+        //     method: 'shaken',
+        //     ingredients: [
+        //         {
+        //             name: 'Rum',
+        //             quantity: 50,
+        //         },
+        //         {
+        //             name: 'Xarope de abacaxi',
+        //             quantity: 25,
+        //         },
+        //         {
+        //             name: 'Leite de coco',
+        //             quantity: 40,
+        //         },
+        //     ],
+        //     garnish: 'Pedaço de abacaxi e/ou cereja',
+        //     glass: 'Copo longo',
+        //     pairing: {
+        //         description: 'Queijo brie com geleia de abacaxi',
+        //         image: 'brie.jpg',
+        //     },
+        // },
     ] as Drink[];
 
     getDrinks(spirits?: number[]): Observable<Drink[]> {
