@@ -400,12 +400,12 @@ export class DrinkService {
                     quantity: 60,
                 },
                 {
-                    name: 'Leite de coco',
-                    quantity: 60,
+                    name: 'Xarope de abacaxi',
+                    quantity: 50,
                 },
                 {
-                    name: 'Xarope de abacaxi',
-                    quantity: 30,
+                    name: 'Leite de coco',
+                    quantity: 40,
                 },
             ],
             garnish: 'Pedaço de abacaxi e/ou cereja',
