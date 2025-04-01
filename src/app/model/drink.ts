@@ -12,4 +12,5 @@ export type Drink = {
     garnish: string;
     glass: string;
     pairing: Pairing;
+    favorite: boolean;
 };

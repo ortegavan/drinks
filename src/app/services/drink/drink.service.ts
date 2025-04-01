@@ -31,6 +31,7 @@ export class DrinkService {
                     'Creme de ricota temperado com salsinha e limão e amêndoas laminadas',
                 image: 'ricota.jpg',
             },
+            favorite: true,
         },
         {
             id: 12,
@@ -55,6 +56,7 @@ export class DrinkService {
                 description: 'Salmão defumado',
                 image: 'salmao.jpg',
             },
+            favorite: false,
         },
         {
             id: 2,
@@ -88,6 +90,7 @@ export class DrinkService {
                 description: 'Salmão defumado',
                 image: 'salmao.jpg',
             },
+            favorite: true,
         },
         {
             id: 3,
@@ -117,35 +120,8 @@ export class DrinkService {
                     'Grissini com tapenade de azeitonas pretas ou sardela',
                 image: 'grissini.jpg',
             },
+            favorite: true,
         },
-        // {
-        //     id: 4,
-        //     name: 'Moscow Mule',
-        //     description: 'Vodka, ginger beer, suco de limão e Angostura',
-        //     image: 'moscow-mule.jpg',
-        //     spirit: 1,
-        //     method: 'built',
-        //     ingredients: [
-        //         {
-        //             name: 'Vodka',
-        //             quantity: 50,
-        //         },
-        //         {
-        //             name: 'Ginger beer',
-        //             quantity: 100,
-        //         },
-        //         {
-        //             name: 'Suco de limão',
-        //             quantity: 10,
-        //         },
-        //         {
-        //             name: 'Angostura',
-        //             quantity: 3,
-        //         },
-        //     ],
-        //     garnish: 'Casca de limão, ramo de hortelã',
-        //     glass: 'Caneca de cobre',
-        // },
         {
             id: 5,
             name: 'Margarita',
@@ -173,6 +149,7 @@ export class DrinkService {
                 description: 'Guacamole',
                 image: 'guacamole.jpg',
             },
+            favorite: false,
         },
         {
             id: 6,
@@ -201,6 +178,7 @@ export class DrinkService {
                 description: 'Nutella com flor de sal',
                 image: 'nutella.jpg',
             },
+            favorite: false,
         },
         {
             id: 7,
@@ -229,6 +207,7 @@ export class DrinkService {
                 description: 'Queijo brie com geleia de abacaxi',
                 image: 'brie.jpg',
             },
+            favorite: false,
         },
         {
             id: 8,
@@ -254,6 +233,7 @@ export class DrinkService {
                     'Bruschetta clássica com tomate, alho, azeite e manjericão',
                 image: 'bruschetta.jpg',
             },
+            favorite: false,
         },
         {
             id: 9,
@@ -292,35 +272,8 @@ export class DrinkService {
                     'Creme de ricota temperado com salsinha e limão e amêndoas laminadas',
                 image: 'ricota.jpg',
             },
+            favorite: false,
         },
-        // {
-        //     id: 10,
-        //     name: 'Manhattan',
-        //     description: 'Bourbon, vermute tinto e Angostura',
-        //     image: 'manhattan.jpg',
-        //     spirit: 5,
-        //     method: 'stirred',
-        //     ingredients: [
-        //         {
-        //             name: 'Whisky',
-        //             quantity: 50,
-        //         },
-        //         {
-        //             name: 'Vermute tinto',
-        //             quantity: 20,
-        //         },
-        //         {
-        //             name: 'Angostura',
-        //             quantity: 2,
-        //         },
-        //     ],
-        //     garnish: 'Cereja',
-        //     glass: 'Martini',
-        //     pairing: {
-        //         description: 'Nutella com flor de sal',
-        //         image: 'nutella.jpg',
-        //     },
-        // },
         {
             id: 11,
             name: 'Martinez',
@@ -352,6 +305,7 @@ export class DrinkService {
                 description: 'Queijo brie com geleia de abacaxi',
                 image: 'brie.jpg',
             },
+            favorite: false,
         },
         {
             id: 13,
@@ -386,6 +340,7 @@ export class DrinkService {
                     'Creme de ricota temperado com salsinha e limão e amêndoas laminadas',
                 image: 'ricota.jpg',
             },
+            favorite: false,
         },
         {
             id: 14,
@@ -414,6 +369,7 @@ export class DrinkService {
                 description: 'Queijo brie com geleia de abacaxi',
                 image: 'brie.jpg',
             },
+            favorite: false,
         },
     ] as Drink[];
 
