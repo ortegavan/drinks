@@ -371,6 +371,40 @@ export class DrinkService {
             },
             favorite: false,
         },
+        {
+            id: 15,
+            name: 'Fitzgerald',
+            description: 'Gin, suco de limão, xarope de açúcar e Angostura',
+            image: 'fitz.jpg',
+            spirit: 2,
+            method: 'shaken',
+            ingredients: [
+                {
+                    name: 'Gin',
+                    quantity: 50,
+                },
+                {
+                    name: 'Suco de limão',
+                    quantity: 25,
+                },
+                {
+                    name: 'Xarope de açúcar',
+                    quantity: 20,
+                },
+                {
+                    name: 'Angostura',
+                    quantity: 2,
+                },
+            ],
+            garnish: 'Fatia de limão',
+            glass: 'Taça coupé',
+            pairing: {
+                description:
+                    'Creme de ricota temperado com salsinha e limão e amêndoas laminadas',
+                image: 'ricota.jpg',
+            },
+            favorite: false,
+        },
     ] as Drink[];
 
     getDrinks(spirits?: number[]): Observable<Drink[]> {
